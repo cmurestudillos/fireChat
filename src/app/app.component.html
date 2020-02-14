@@ -1,0 +1,15 @@
+<div class="main-container">
+  <div class="row">
+    <div class="col col-lg-2 mr-1" *ngIf="_chats.usuario.id">
+      <h1>Firechat</h1>
+    </div>
+    <div class="col mt-2" *ngIf="_chats.usuario.id">
+      <button class="btn btn-outline-danger w-25" (click)="_chats.logout()"> Salir </button>
+    </div>
+  </div>
+
+  <app-login *ngIf="!_chats.usuario.id"></app-login>
+  <diV class="chat-window" *ngIf="_chats.usuario.id">
+    <app-chat></app-chat>
+  </diV>
+</div>
