@@ -6,7 +6,8 @@ import { AngularFirestoreCollection } from '@angular/fire/firestore';
 import { Mensaje } from '../models/mensaje.model';
 
 import { AngularFireAuth } from '@angular/fire/auth';
-import * as firebase from 'firebase/app';
+// import firebase from 'firebase/app'
+import * as firebase from 'firebase/app'
 
 @Injectable({
   providedIn: 'root'

@@ -26,7 +26,6 @@ export class ChatComponent implements OnInit {
   ngOnInit() {
     // Obtenemos la referencia del elemento html
     this.elemento = document.getElementById('app-mensajes');
-
   }
 
   enviarMensaje(){

@@ -15,7 +15,6 @@ export class LoginComponent implements OnInit {
 
   ingresar(proveedor:string){
     // console.log(proveedor);
-
     // llamamos a la funcion login del servicio
     this._chat.login(proveedor);
 
