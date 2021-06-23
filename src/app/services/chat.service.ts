@@ -32,16 +32,16 @@ export class ChatService {
 
   login( proveedor:string ){
     if(proveedor === 'google'){
-      this.afAuth.auth.signInWithPopup(new firebase.auth.GoogleAuthProvider());
+      this.afAuth.signInWithPopup(new firebase.auth.GoogleAuthProvider());
     }else{
-      this.afAuth.auth.signInWithPopup(new firebase.auth.GithubAuthProvider());
+      this.afAuth.signInWithPopup(new firebase.auth.GithubAuthProvider());
     }
 
   }
   logout(){
     // Restaurar las propiedades el usuario
     this.usuario = {};
-    this.afAuth.auth.signOut();
+    this.afAuth.signOut();
   }
 
   // Metodo para la carga de los mensajes del chat
